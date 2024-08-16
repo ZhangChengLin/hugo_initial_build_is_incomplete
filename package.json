@@ -1,0 +1,25 @@
+{
+  "name": "hugo_initial_build_is_incomplete",
+  "version": "1.0.0",
+  "scripts": {
+    "hugo--build": "hugo --gc",
+    "hugo--build:watch": "hugo -e production --gc --watch",
+    "hugo--dev": "hugo -e development --gc",
+    "hugo--dev:watch": "hugo -e development --gc --watch",
+    "hugo-server:production": "hugo server -e production --gc",
+    "hugo-server:development": "hugo server -e development --gc",
+    "hugo-config": "hugo config",
+    "hugo-config:-f:json": "hugo config --format json",
+    "hugo-config:-f:yaml": "hugo config --format yaml",
+    "hugo-version": "hugo version"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "hugo-bin": "^0.129.2"
+  },
+  "hugo-bin": {
+    "buildTags": "extended"
+  }
+}

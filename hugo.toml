@@ -1,0 +1,42 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+disablekinds = ['rss', 'sitemap', 'taxonomy', 'term']
+
+cleanDestinationDir = true
+
+[module]
+
+[module.HugoVersion]
+extended = true
+min = "0.132.2"
+max = "0.132.2"
+
+[[module.mounts]]
+source = "test/archetypes"
+target = "archetypes"
+
+[[module.mounts]]
+source = "test/content"
+target = "content"
+
+[[module.mounts]]
+source = "test/assets"
+target = "assets"
+
+[[module.mounts]]
+source = "test/data"
+target = "data"
+
+[[module.mounts]]
+source = "test/i18n"
+target = "i18n"
+
+[[module.mounts]]
+source = "test/layouts"
+target = "layouts"
+
+[[module.mounts]]
+source = "test/static"
+target = "static/static"
